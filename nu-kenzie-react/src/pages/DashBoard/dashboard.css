@@ -1,0 +1,28 @@
+/* body {
+  background-color: white;
+} */
+.dash_header {
+  width: 100%;
+  height: 70px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-inline: 20px;
+
+  background-color: var(--Grey-1);
+  box-shadow: 0px 4px 9px -5px black;
+}
+
+.btn_logout {
+  width: 64px;
+  height: 40px;
+
+  background-color: var(--Grey-2);
+  border-radius: var(--btn-radius);
+  border: none;
+}
+
+.dash_main {
+  margin-top: 25px;
+}
