@@ -1,0 +1,59 @@
+li {
+  min-height: 170px;
+  height: 170px;
+  min-width: 350px;
+
+  padding: 1rem;
+
+  background-color: var(--Grey-1);
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.box_card {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.box_card > img {
+  height: 30px;
+  width: 40px;
+}
+
+.green {
+  border-left: 5px solid var(--Color-Secondary);
+  border-radius: 4px;
+}
+.grey {
+  border-left: 5px solid var(--Grey-3);
+  border-radius: 4px;
+}
+
+@media (min-width: 720px) {
+  .grey {
+    position: relative;
+  }
+  .green {
+    position: relative;
+  }
+
+  .box_card {
+    flex-direction: row;
+    gap: 80px;
+  }
+
+  .type_selected--whichIs {
+    position: absolute;
+    top: 66%;
+    right: 87%;
+  }
+
+  .container_cards {
+    min-height: 100px;
+    height: 100px;
+  }
+}

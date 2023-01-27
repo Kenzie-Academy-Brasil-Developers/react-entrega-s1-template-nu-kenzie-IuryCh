@@ -3,7 +3,7 @@
   padding: 1rem;
   border: 1px solid var(--Grey-2);
 
-  height: 350px;
+  height: 270px;
   width: 90%;
 
   display: flex;
@@ -11,7 +11,7 @@
 }
 
 .description_label {
-  padding: 0 0 1rem 1rem;
+  padding: 0 0 0.625rem 0.1rem;
   font: var(--body-2);
 }
 
@@ -22,6 +22,7 @@
 .description_input {
   border: none;
   padding-inline: 1rem;
+
   height: 40px;
   width: 100%;
 
@@ -34,10 +35,71 @@
 }
 
 .box_finantion-data {
+  margin: 10px auto;
+
   display: flex;
+  gap: 4rem;
 }
 
 .box_finantion-data > div > label {
   margin-bottom: 9px;
   font: var(--body-2);
+}
+
+.box_howmuch,
+.box_typevalue {
+  display: flex;
+  flex-direction: column;
+}
+
+.box_howmuch {
+  position: relative;
+}
+
+.box_howmuch > img {
+  height: 20px;
+  position: absolute;
+  top: 55%;
+  left: 67%;
+}
+
+.box_howmuch--input {
+  border: none;
+  border-radius: var(--btn-radius);
+
+  padding-inline: 15px;
+
+  height: 48px;
+  width: 120px;
+
+  background-color: var(--Grey-1);
+}
+
+.box_typevalue--select {
+  border: none;
+  border-radius: var(--btn-radius);
+  padding-inline: 1rem;
+
+  height: 40px;
+  width: 150px;
+
+  background-color: var(--Grey-1);
+}
+
+.btn_form {
+  border: none;
+  border-radius: var(--btn-radius);
+
+  height: 48px;
+  width: 100%;
+
+  color: white;
+
+  background-color: var(--Color-primary);
+}
+
+@media (min-width: 720px) {
+  .container_dash--form {
+    width: 100%;
+  }
 }

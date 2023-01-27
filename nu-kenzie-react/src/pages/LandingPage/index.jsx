@@ -1,6 +1,6 @@
 import "./landingpage.css";
 
-function LandingPage() {
+function LandingPage({ setIsDash }) {
   return (
     <>
       <div className="container_landingpage">
@@ -15,7 +15,11 @@ function LandingPage() {
             <p className="container_middle--subtitle">
               de forma rápida e segura
             </p>
-            <button className="container_middle--btn" /*onClick={x}*/>
+            <button
+              type="button"
+              className="container_middle--btn"
+              onClick={() => setIsDash(true)}
+            >
               Iniciar
             </button>
           </div>

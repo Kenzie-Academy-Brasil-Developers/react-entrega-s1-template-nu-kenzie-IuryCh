@@ -1,21 +1,67 @@
+import "../../src/styles/reset.css";
+import "../../src/styles/globalstyles.css";
 import "./card.css";
+
 import trash from "../../src/assets/imagens/ButtonTrasht.svg";
 
-function Card() {
-  return (
-    <li>
-      <div>
-        <h3>Salário - Mês Dezembro</h3>
-        <p>
-          <span>R$</span> 6.000,00
-        </p>
-        <img src={trash} alt="lixeira" />
-      </div>
-      <div>
-        <p>Entrada</p>
-      </div>
-    </li>
-  );
+function Card({ item, setListTransactions }) {
+  console.log(item);
+  function removeCard(event) {
+    return item.filter((element) => {
+      console.log(element.id !== event.target.id);
+    });
+  }
+
+  if (item.select === "Entrada") {
+    return (
+      <li className="container_cards green" id={item.id}>
+        <div className="box_card">
+          <h3 className="box_card-type"> {item.description} </h3>
+
+          <div className="type_selected">
+            <p className="type_selected--whichIs"> {item.select} </p>
+          </div>
+
+          <p className="box_card--value">
+            <span>R$</span> {item.number}
+          </p>
+
+          <img
+            src={trash}
+            alt="lixeira"
+            id={item.id}
+            onClick={(event) => {
+              removeCard(event);
+            }}
+          />
+        </div>
+      </li>
+    );
+  } else {
+    return (
+      <li className="container_cards grey" id={item.id}>
+        <div className="box_card">
+          <h3 className="box_card-type"> {item.description} </h3>
+
+          <div className="type_selected">
+            <p className="type_selected--whichIs"> {item.select} </p>
+          </div>
+
+          <p className="box_card--value">
+            <span>R$</span> {item.number}
+          </p>
+
+          <img
+            src={trash}
+            alt="lixeira"
+            onClick={(event) => {
+              removeCard(event);
+            }}
+          />
+        </div>
+      </li>
+    );
+  }
 }
 
 export default Card;

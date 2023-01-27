@@ -26,3 +26,18 @@
 .dash_main {
   margin-top: 25px;
 }
+
+.finantial_summary {
+  margin-inline: 20px;
+}
+@media (min-width: 720px) {
+  .dash_header {
+    padding-inline: 200px;
+  }
+  .dash_main {
+    margin-inline: 200px;
+
+    display: flex;
+    gap: 60px;
+  }
+}

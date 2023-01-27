@@ -8,12 +8,16 @@ import DashBoard from "./pages/Dashboard";
 
 function App() {
   const [isDash, setIsDash] = useState(true);
-  const [listTransactions, setListTransactions] = useState([
-    { description: "Salário recebido", type: "entrada", value: 2500 },
-    { description: "Conta de luz", type: "saída", value: -150 },
-  ]);
 
-  return <div className="App">{!isDash ? <LandingPage /> : <DashBoard />}</div>;
+  return (
+    <div className="App">
+      {!isDash ? (
+        <LandingPage setIsDash={setIsDash} />
+      ) : (
+        <DashBoard setIsDash={setIsDash} />
+      )}
+    </div>
+  );
 }
 
 export default App;

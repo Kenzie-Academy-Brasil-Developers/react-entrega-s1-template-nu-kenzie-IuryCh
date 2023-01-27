@@ -1,0 +1,25 @@
+.box_totalMoney {
+  width: 370px;
+  height: 90px;
+
+  margin: 20px auto;
+  border: 1px solid var(--Grey-2);
+  border-radius: var(--btn-radius);
+  padding-inline: 20px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.total_value {
+  display: flex;
+  gap: 180px;
+
+  font: var(--Title-3);
+}
+.total_value--span {
+  color: var(--Color-primary);
+}
+.total_value--description {
+  font: var(--body);
+}

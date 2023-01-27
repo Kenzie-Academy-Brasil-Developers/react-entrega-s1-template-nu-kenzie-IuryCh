@@ -1,0 +1,19 @@
+ul {
+  height: auto;
+
+  border-radius: var(--btn-radius);
+  margin: 5px 15px 10px 15px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.entryless {
+  margin: 10px 20px;
+}
+@media (min-width: 720px) {
+  ul {
+    width: 520px;
+  }
+}
