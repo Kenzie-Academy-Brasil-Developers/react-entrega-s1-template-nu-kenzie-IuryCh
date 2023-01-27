@@ -53,15 +53,15 @@ function Card({ item, listTransactions, setListTransactions }) {
             <span>R$</span> {item.number}
           </p>
 
-          <img
+          <span
             className="trash_icon"
-            src={trash}
+            // src={trash}
             alt="lixeira"
             id={item.id}
             onClick={(event) => {
               removeCard(event);
             }}
-          />
+          ></span>
         </div>
       </li>
     );

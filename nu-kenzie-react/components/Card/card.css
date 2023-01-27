@@ -56,8 +56,17 @@ li {
     min-height: 100px;
     height: 100px;
   }
-
+  .trash_icon {
+    height: 20px;
+    width: 20px;
+    /* border: 2px solid black; */
+    background-image: url("../../src/assets/imagens/ButtonTrasht.svg");
+  }
   .trash_icon:hover {
+    background-image: url("../../src/assets/imagens/trash2.svg");
+    height: 20px;
+    width: 20px;
     cursor: pointer;
+    /* background-color: var(--Grey-4); */
   }
 }
