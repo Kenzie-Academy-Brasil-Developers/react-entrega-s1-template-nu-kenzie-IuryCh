@@ -6,7 +6,7 @@ import LandingPage from "./pages/LandingPage";
 import DashBoard from "./pages/DashBoard";
 
 function App() {
-  const [isDash, setIsDash] = useState(true);
+  const [isDash, setIsDash] = useState(false);
 
   return (
     <>

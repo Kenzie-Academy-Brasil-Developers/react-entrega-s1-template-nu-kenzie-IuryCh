@@ -28,6 +28,7 @@ function Card({ item, listTransactions, setListTransactions }) {
           </p>
 
           <img
+            className="trash_icon"
             src={trash}
             alt="lixeira"
             id={item.id}
@@ -53,6 +54,7 @@ function Card({ item, listTransactions, setListTransactions }) {
           </p>
 
           <img
+            className="trash_icon"
             src={trash}
             alt="lixeira"
             id={item.id}

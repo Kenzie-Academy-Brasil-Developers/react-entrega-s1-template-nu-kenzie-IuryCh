@@ -102,4 +102,34 @@
   .container_dash--form {
     width: 100%;
   }
+
+  .description_input,
+  .box_howmuch--input,
+  .box_typevalue--select {
+    border-radius: var(--btn-radius);
+  }
+
+  .description_input:focus {
+    border: 1.2px solid var(--Grey-4);
+    border-radius: var(--btn-radius);
+  }
+  .box_howmuch--input:focus {
+    border: 1.2px solid var(--Grey-4);
+    border-radius: var(--btn-radius);
+  }
+  .box_typevalue--select:focus {
+    border: 1.2px solid var(--Grey-4);
+    border-radius: var(--btn-radius);
+  }
+
+  .btn_form:hover {
+    background-color: var(--Color-primary-2);
+    cursor: pointer;
+  }
+
+  .btn_logout:hover {
+    cursor: pointer;
+    background-color: var(--Grey-3);
+    color: white;
+  }
 }

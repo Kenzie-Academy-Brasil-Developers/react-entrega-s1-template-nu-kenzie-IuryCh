@@ -56,4 +56,8 @@ li {
     min-height: 100px;
     height: 100px;
   }
+
+  .trash_icon:hover {
+    cursor: pointer;
+  }
 }
