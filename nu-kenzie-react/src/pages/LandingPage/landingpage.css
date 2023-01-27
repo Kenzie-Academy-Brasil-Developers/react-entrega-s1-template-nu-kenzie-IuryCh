@@ -1,7 +1,11 @@
-.box_nukenzie {
-  margin-top: 80px;
+.container_landingpage {
+  background-color: var(--Grey-4);
+  padding-top: 80px;
+  height: 132vh;
 }
-
+.box_nukenzie {
+  padding-left: 13px;
+}
 .container_middle {
   margin-top: 30px;
   padding-inline: 10px;
@@ -53,7 +57,11 @@
 
 @media (min-width: 720px) {
   .container_landingpage {
-    margin: 50px auto;
+    width: 100vw;
+    height: 100vh;
+
+    background-color: var(--Grey-4);
+    margin: 0px auto;
 
     display: flex;
     align-items: center;

@@ -4,12 +4,13 @@ import "./card.css";
 
 import trash from "../../src/assets/imagens/ButtonTrasht.svg";
 
-function Card({ item, setListTransactions }) {
-  console.log(item);
+function Card({ item, listTransactions, setListTransactions }) {
   function removeCard(event) {
-    return item.filter((element) => {
-      console.log(element.id !== event.target.id);
+    const objFiltered = listTransactions.filter((obj) => {
+      return obj.id !== event.target.id;
     });
+
+    return setListTransactions(objFiltered);
   }
 
   if (item.select === "Entrada") {
@@ -54,6 +55,7 @@ function Card({ item, setListTransactions }) {
           <img
             src={trash}
             alt="lixeira"
+            id={item.id}
             onClick={(event) => {
               removeCard(event);
             }}

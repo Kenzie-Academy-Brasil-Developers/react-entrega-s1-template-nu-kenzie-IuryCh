@@ -31,6 +31,7 @@ function List({ listTransactions, setListTransactions }) {
               <Card
                 key={item.id}
                 item={item}
+                listTransactions={listTransactions}
                 setListTransactions={setListTransactions}
               />
             );

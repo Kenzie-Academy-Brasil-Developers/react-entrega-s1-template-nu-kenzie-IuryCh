@@ -1,3 +1,4 @@
+import styles from "./landingPage.module.css";
 import "./landingpage.css";
 
 function LandingPage({ setIsDash }) {

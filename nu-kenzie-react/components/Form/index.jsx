@@ -14,7 +14,7 @@ function Form({ listTransactions, setListTransactions }) {
     const newObj = {
       id: uuid(),
       description: description,
-      number: number,
+      number: +number,
       select: select,
     };
 
@@ -33,6 +33,7 @@ function Form({ listTransactions, setListTransactions }) {
           type="text"
           id="description"
           placeholder="Digite sua descrição aqui"
+          required
         />
         <span className="description_exemplo">Ex: compra de roupas</span>
         <div className="box_finantion-data">
@@ -43,18 +44,22 @@ function Form({ listTransactions, setListTransactions }) {
               className="box_howmuch--input"
               type="number"
               id="number"
+              required
             />
             <img src={real} />
           </div>
           <div className="box_typevalue">
             <label htmlFor="value">Tipo de valor</label>
             <select
-              onChange={(event) => setSelect(event.target.value)}
+              onChange={(event) => {
+                setSelect(event.target.value);
+              }}
               className="box_typevalue--select"
               name="value"
               id="value"
+              required
             >
-              <option> Choose </option>
+              <option value=""> Choose </option>
               <option value="Entrada">Entrada</option>
               <option value="Despesa">Despesa</option>
             </select>
