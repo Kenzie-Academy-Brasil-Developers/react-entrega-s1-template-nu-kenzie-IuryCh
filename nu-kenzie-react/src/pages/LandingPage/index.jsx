@@ -1,4 +1,6 @@
 import styles from "./landingPage.module.css";
+import NuKenzie from "../../assets/imagens/NuKenzie.svg";
+import illustration from "../../assets/imagens/Illustration.svg";
 import "./landingpage.css";
 
 function LandingPage({ setIsDash }) {
@@ -7,7 +9,7 @@ function LandingPage({ setIsDash }) {
       <div className="container_landingpage">
         <div className="container_leftside">
           <div className="box_nukenzie">
-            <img src="./src/assets/imagens/NuKenzie.svg" alt="Nu Kenzie" />
+            <img src={NuKenzie} alt="Nu Kenzie" />
           </div>
           <div className="container_middle">
             <h2 className="container_middle--title">
@@ -26,7 +28,7 @@ function LandingPage({ setIsDash }) {
           </div>
         </div>
         <div className="box_illustratrion">
-          <img src="./src/assets/imagens/Illustration.svg" />
+          <img src={illustration} />
         </div>
       </div>
     </>

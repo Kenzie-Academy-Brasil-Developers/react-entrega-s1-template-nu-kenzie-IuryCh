@@ -1,4 +1,3 @@
-import { v4 as uuid } from "uuid";
 import Card from "../Card";
 import "./list.css";
 // import { useEffect } from "react";  useEffect(() => , [listTransactions]);
