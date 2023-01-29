@@ -2,8 +2,6 @@ import "../../src/styles/reset.css";
 import "../../src/styles/globalstyles.css";
 import "./card.css";
 
-import trash from "../../src/assets/imagens/ButtonTrasht.svg";
-
 function Card({ item, listTransactions, setListTransactions }) {
   function removeCard(event) {
     const objFiltered = listTransactions.filter((obj) => {
@@ -27,15 +25,14 @@ function Card({ item, listTransactions, setListTransactions }) {
             <span>R$</span> {item.number}
           </p>
 
-          <img
+          <span
             className="trash_icon"
-            src={trash}
             alt="lixeira"
             id={item.id}
             onClick={(event) => {
               removeCard(event);
             }}
-          />
+          ></span>
         </div>
       </li>
     );
@@ -55,7 +52,6 @@ function Card({ item, listTransactions, setListTransactions }) {
 
           <span
             className="trash_icon"
-            // src={trash}
             alt="lixeira"
             id={item.id}
             onClick={(event) => {

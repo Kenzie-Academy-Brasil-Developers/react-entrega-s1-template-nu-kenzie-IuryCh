@@ -15,20 +15,6 @@ function TotalMoney({ listTransactions }) {
     return pV + initial;
   }, 0);
 
-  // const totalOutputs = listTransactions.reduce((pV, cV) => {
-  //   if (cV.select === "Despesa") {
-  //     return (cV.number += pV);
-  //   }
-  // }, 0);
-
-  // const totalValue = listTransactions.reduce((pV, cV) => {
-  //   console.log(listTransactions);
-  //   console.log("pV:" + pV);
-  //   console.log("cV:" + cV.number);
-  //   console.log(cV.number + pV);
-  //   return cV.number + pV;
-  // }, 0);
-
   return (
     <>
       {listTransactions.length !== 0 ? (
@@ -48,14 +34,3 @@ function TotalMoney({ listTransactions }) {
 }
 
 export default TotalMoney;
-{
-  /* <div className="box_totalMoney">
-        <p className="total_value">
-          Valor Total: <span className="total_value--span">$ 6000</span>
-        </p>
-        <span className="total_value--description">
-          O valor se refere ao saldo
-        </span>
-      </div>
-      */
-}

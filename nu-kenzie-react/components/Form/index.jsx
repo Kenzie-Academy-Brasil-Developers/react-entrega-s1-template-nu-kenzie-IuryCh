@@ -65,7 +65,6 @@ function Form({ listTransactions, setListTransactions }) {
             </select>
           </div>
         </div>
-
         <button className="btn_form" type="submit">
           Inserir Valor
         </button>

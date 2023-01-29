@@ -78,10 +78,7 @@
   .container_middle--subtitle {
     margin-top: 30px;
   }
-  /* .box_illustratrion {
-    height: 500px;
-    width: 500px;
-  } */
+
   .container_middle--btn {
     width: 69%;
     height: 50px;
@@ -90,12 +87,7 @@
     margin-right: 25%;
   }
   .box_illustratrion > img {
-    height: 550px;
+    height: 465px;
     width: 550px;
   }
-  /* .container_leftside {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  } */
 }

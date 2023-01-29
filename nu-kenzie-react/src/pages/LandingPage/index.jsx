@@ -1,6 +1,6 @@
-import styles from "./landingPage.module.css";
 import NuKenzie from "../../assets/imagens/NuKenzie.svg";
 import illustration from "../../assets/imagens/Illustration.svg";
+import Button from "../../../components/Button";
 import "./landingpage.css";
 
 function LandingPage({ setIsDash }) {
@@ -18,13 +18,7 @@ function LandingPage({ setIsDash }) {
             <p className="container_middle--subtitle">
               de forma rápida e segura
             </p>
-            <button
-              type="button"
-              className="container_middle--btn"
-              onClick={() => setIsDash(true)}
-            >
-              Iniciar
-            </button>
+            <Button setIsDash={setIsDash} />
           </div>
         </div>
         <div className="box_illustratrion">

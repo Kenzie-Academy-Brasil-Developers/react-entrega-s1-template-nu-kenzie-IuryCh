@@ -14,14 +14,14 @@
   --Grey-4: #212529;
 
   /* Typography */
-  --title-1: 700 38px Nunito, "sans-serif";
-  --Title-2: 700 22px Nunito, "sans-serif";
-  --Title-3: 700 16px Nunito, "sans-serif";
-  --Title-4: 700 12px Nunito, "sans-serif";
-  --headline: 400 16px Nunito, "sans-serif";
-  --body: 400 12px Nunito, "sans-serif";
-  --body-2: 400 12px Inter, "sans-serif";
+  --title-1: 700 2.375rem Nunito, "sans-serif";
+  --Title-2: 700 1.375rem Nunito, "sans-serif";
+  --Title-3: 700 1rem Nunito, "sans-serif";
+  --Title-4: 700 0.75rem Nunito, "sans-serif";
+  --headline: 400 1rem Nunito, "sans-serif";
+  --body: 400 0.75rem Nunito, "sans-serif";
+  --body-2: 400 0.75rem Inter, "sans-serif";
 
   /* buttons */
-  --btn-radius: 8px;
+  --btn-radius: 0.5rem;
 }

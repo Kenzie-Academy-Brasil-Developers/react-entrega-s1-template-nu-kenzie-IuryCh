@@ -1,11 +1,11 @@
 import "../../styles/globalstyles.css";
 import "../../styles/reset.css";
 import "./dashboard.css";
-import { v4 as uuid } from "uuid";
+import Header from "../../../components/Header";
 import Form from "../../../components/Form";
 import TotalMoney from "../../../components/TotalMoney";
 import List from "../../../components/List";
-import logo from "../../assets/imagens/NuKenzie2.svg";
+
 import { useState } from "react";
 
 function DashBoard({ setIsDash }) {
@@ -13,18 +13,8 @@ function DashBoard({ setIsDash }) {
 
   return (
     <>
-      <header className="dash_header">
-        <div className="dash_nukenzie">
-          <img src={logo} alt="Nu kenzie" />
-        </div>
-        <button
-          type="button"
-          className="btn_logout"
-          onClick={() => setIsDash(false)}
-        >
-          Inicio
-        </button>
-      </header>
+      <Header setIsDash={setIsDash} />
+     
       <main className="dash_main">
         <div>
           <Form
