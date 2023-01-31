@@ -1,5 +1,5 @@
-import "../../src/styles/reset.css";
-import "../../src/styles/globalstyles.css";
+import "../../styles/reset.css";
+import "../../styles/globalstyles.css";
 import "./card.css";
 
 function Card({ item, listTransactions, setListTransactions }) {
@@ -15,7 +15,7 @@ function Card({ item, listTransactions, setListTransactions }) {
     return (
       <li className="container_cards green" id={item.id}>
         <div className="box_card">
-          <h3 className="box_card-type"> {item.description} </h3>
+          <h3 className="box_card--type"> {item.description} </h3>
 
           <div className="type_selected">
             <p className="type_selected--whichIs"> {item.select} </p>
@@ -40,7 +40,7 @@ function Card({ item, listTransactions, setListTransactions }) {
     return (
       <li className="container_cards grey" id={item.id}>
         <div className="box_card">
-          <h3 className="box_card-type"> {item.description} </h3>
+          <h3 className="box_card--type"> {item.description} </h3>
 
           <div className="type_selected">
             <p className="type_selected--whichIs"> {item.select} </p>

@@ -1,5 +1,5 @@
 import "./header.css";
-import logo from "../../src/assets/imagens/NuKenzie2.svg";
+import logo from "../../assets/imagens/NuKenzie2.svg";
 
 function Header({ setIsDash }) {
   return (

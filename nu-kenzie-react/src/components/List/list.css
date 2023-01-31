@@ -11,6 +11,8 @@ ul {
 
 .entryless {
   margin: 10px 20px;
+
+  font: var(--Title-2);
 }
 @media (min-width: 720px) {
   ul {

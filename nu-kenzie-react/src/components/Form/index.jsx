@@ -1,5 +1,5 @@
 import "./form.css";
-import real from "../../src/assets/imagens/R$.svg";
+import real from "../../assets/imagens/R$.svg";
 import { useState } from "react";
 import { v4 as uuid } from "uuid";
 
@@ -7,7 +7,7 @@ function Form({ listTransactions, setListTransactions }) {
   const [description, setDescription] = useState("");
   const [number, setNumber] = useState(0);
   const [select, setSelect] = useState("");
-
+  console.log("state:" + typeof number);
   function handleSubmit(event) {
     event.preventDefault();
 
@@ -17,7 +17,7 @@ function Form({ listTransactions, setListTransactions }) {
       number: +number,
       select: select,
     };
-
+    console.log(typeof newObj.number);
     setListTransactions([...listTransactions, newObj]);
   }
 

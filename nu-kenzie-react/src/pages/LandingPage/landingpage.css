@@ -55,7 +55,7 @@
   width: 300px;
 }
 
-@media (min-width: 720px) {
+@media (min-width: 1020px) {
   .container_landingpage {
     width: 100vw;
     height: 100vh;

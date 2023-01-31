@@ -24,6 +24,14 @@ li {
   width: 40px;
 }
 
+.box_card--type {
+  font: var(--Title-3);
+}
+
+.type_selected--whichIs {
+  font: var(--body);
+}
+
 .green {
   border-left: 5px solid var(--Color-Secondary);
   border-radius: 4px;

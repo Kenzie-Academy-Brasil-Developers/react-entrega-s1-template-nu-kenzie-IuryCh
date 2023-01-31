@@ -1,10 +1,10 @@
 import "../../styles/globalstyles.css";
 import "../../styles/reset.css";
 import "./dashboard.css";
-import Header from "../../../components/Header";
-import Form from "../../../components/Form";
-import TotalMoney from "../../../components/TotalMoney";
-import List from "../../../components/List";
+import Header from "../../components/Header";
+import Form from "../../components/Form";
+import TotalMoney from "../../components/TotalMoney";
+import List from "../../components/List";
 
 import { useState } from "react";
 
@@ -14,7 +14,7 @@ function DashBoard({ setIsDash }) {
   return (
     <>
       <Header setIsDash={setIsDash} />
-     
+
       <main className="dash_main">
         <div>
           <Form

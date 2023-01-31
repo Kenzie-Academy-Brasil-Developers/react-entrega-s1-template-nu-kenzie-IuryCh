@@ -25,3 +25,7 @@
   /* buttons */
   --btn-radius: 0.5rem;
 }
+body {
+  width: 100vw;
+  height: 100vh;
+}

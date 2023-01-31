@@ -1,9 +1,9 @@
 import NuKenzie from "../../assets/imagens/NuKenzie.svg";
 import illustration from "../../assets/imagens/Illustration.svg";
-import Button from "../../../components/Button";
+// import Button from "../../components/Button";
 import "./landingpage.css";
 
-function LandingPage({ setIsDash }) {
+function LandingPage({ Button, setIsDash }) {
   return (
     <>
       <div className="container_landingpage">
@@ -18,7 +18,8 @@ function LandingPage({ setIsDash }) {
             <p className="container_middle--subtitle">
               de forma rápida e segura
             </p>
-            <Button setIsDash={setIsDash} />
+            {<Button setIsDash={setIsDash} />}
+            {/* <Button setIsDash={setIsDash} /> */}
           </div>
         </div>
         <div className="box_illustratrion">

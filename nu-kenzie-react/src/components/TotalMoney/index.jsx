@@ -11,7 +11,7 @@ function TotalMoney({ listTransactions }) {
     } else if (cV.select === "Entrada") {
       initial = cV.number;
     }
-    console.log(typeof initial);
+
     return pV + initial;
   }, 0);
 
@@ -20,7 +20,8 @@ function TotalMoney({ listTransactions }) {
       {listTransactions.length !== 0 ? (
         <div className="box_totalMoney">
           <p className="total_value">
-            Valor Total: <span className="total_value--span">{totalValue}</span>
+            Valor Total:{" "}
+            <span className="total_value--span">$ {totalValue}</span>
           </p>
           <span className="total_value--description">
             O valor se refere ao saldo
