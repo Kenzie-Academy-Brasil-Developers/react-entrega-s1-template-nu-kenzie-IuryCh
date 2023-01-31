@@ -3,7 +3,7 @@ import illustration from "../../assets/imagens/Illustration.svg";
 // import Button from "../../components/Button";
 import "./landingpage.css";
 
-function LandingPage({ Button, setIsDash }) {
+function LandingPage({ children }) {
   return (
     <>
       <div className="container_landingpage">
@@ -18,7 +18,7 @@ function LandingPage({ Button, setIsDash }) {
             <p className="container_middle--subtitle">
               de forma rápida e segura
             </p>
-            {<Button setIsDash={setIsDash} />}
+            {children}
             {/* <Button setIsDash={setIsDash} /> */}
           </div>
         </div>

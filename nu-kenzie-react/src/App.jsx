@@ -12,7 +12,9 @@ function App() {
   return (
     <>
       {!isDash ? (
-        <LandingPage Button= {Button} setIsDash={setIsDash} />
+        <LandingPage setIsDash={setIsDash}>
+          <Button setIsDash={setIsDash} />
+        </LandingPage>
       ) : (
         <DashBoard setIsDash={setIsDash} />
       )}
